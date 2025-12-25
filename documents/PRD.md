@@ -16,6 +16,7 @@
 * **Schema Mapping:** MongoDB-ning JSON (BSON) hujjatlarini ClickHouse-ning ustunli (tabular) tuzilmasiga o'tkazish.
 * **Sync Interval:** Sinxronizatsiya davriyligini (masalan, har 60 sekundda) belgilash.
 * **Incremental Sync:** Ma'lumotlarni faqat yangi qo'shilgan qismini (`_id` yoki `updated_at` bo'yicha) ko'chirish.
+* **Full sync append:** Eski malumotlar update bo'lishi kutilyotgan tablelarni incremental sync o'rniga to'liq rowni delete qilib batch write qilish.
 * **Batch Processing:** Ma'lumotlarni kichik paketlarda (chunks) qayta ishlash orqali oqim barqarorligini ta'minlash.
 
 ### 2.3 Minimalist Web UI
